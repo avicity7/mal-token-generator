@@ -3,8 +3,8 @@ import requests
 import secrets
 
 
-CLIENT_ID = '17508b81aad4dc89aad8a8bfef001304'
-CLIENT_SECRET = 'd8a8927498b6786a2d232a3a1038b9d5b159b9ed32bcc7810abbc0a07d19d70d'
+CLIENT_ID = 'ENTER CLIENT ID HERE'
+CLIENT_SECRET = 'ENTER CLIENT SECRET HERE'
 
 
 # 1. Generate a new Code Verifier / Code Challenge.
@@ -72,4 +72,3 @@ if __name__ == '__main__':
     token = generate_new_token(authorisation_code, code_verifier)
 
     print_user_info(token['access_token'])
-
